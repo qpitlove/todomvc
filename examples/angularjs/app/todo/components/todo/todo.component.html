@@ -10,8 +10,7 @@
 	</header>
 	<header ng-if="$ctrl.getTodos().length > 0">
 		<input id="search-todo" placeholder="Search Todo" ng-model="$ctrl.search.title"
-			   todo-focus="$ctrl.search.title === ''"
-			   todo-composition-event-off>
+			   todo-focus="$ctrl.search.title === ''">
 		<button class="search-clear" ng-click="$ctrl.search.title = '';" ng-if="$ctrl.search.title.length > 0"></button>
 	</header>
 	<section id="main" ng-if="$ctrl.getTodos().length > 0" ng-cloak>

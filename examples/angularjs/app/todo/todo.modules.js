@@ -9,7 +9,6 @@ import TodoApiStorage from './services/TodoApiStorage/TodoApiStorage.factory';
 import TodoLocalStorage from './services/TodoLocalStorage/TodoLocalStorage.factory';
 import todoEscape from './directives/todoEscape/todoEscape.directive';
 import todoFocus from './directives/todoFocus/todoFocus.directive';
-import todoCompositionEventOff from './directives/todoCompositionEventOff/todoCompositionEventOff.directive';
 
 import todoRoutes from './todo.routes';
 
@@ -29,7 +28,6 @@ angular.module(MODULE_NAME, [
 	.factory('TodoLocalStorage', TodoLocalStorage)
 	.directive('todoEscape', todoEscape)
 	.directive('todoFocus', todoFocus)
-	.directive('todoCompositionEventOff', todoCompositionEventOff)
 	.config(todoRoutes);
 
 export default MODULE_NAME;
