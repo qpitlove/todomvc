@@ -12,8 +12,6 @@
   "dependencies": {
     "@uirouter/angularjs": "^1.0.15",
     "angular": "^1.6.10",
-    "angular-fontawesome": "^1.0.0",
-    "font-awesome": "^4.5.0",
     "todomvc-app-css": "^1.0.1",
     "todomvc-common": "^1.0.0",
     "uuid": "^3.2.1"

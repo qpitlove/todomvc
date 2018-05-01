@@ -1,6 +1,5 @@
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs/release/angular-ui-router'
-import {ngFontawesome} from 'exports-loader?ngFontawesome="picardy.fontawesome"!angular-fontawesome/dist/angular-fontawesome';
 
 import uuid from 'uuid';
 
@@ -14,13 +13,11 @@ import todoCompositionEventOff from './directives/todoCompositionEventOff/todoCo
 
 import todoRoutes from './todo.routes';
 
-require('font-awesome/css/font-awesome.css');
 require('todomvc-app-css/index.css');
 
 const MODULE_NAME = 'todo';
 angular.module(MODULE_NAME, [
-		uiRouter,
-		ngFontawesome
+		uiRouter
 	])
 	.constant('localStorage', window.localStorage)
 	.constant('Date', window.Date)
