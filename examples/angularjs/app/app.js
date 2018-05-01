@@ -5,14 +5,12 @@ require('angular/angular-csp.css');
 import uiRouter from '@uirouter/angularjs/release/angular-ui-router';
 
 import todoModule from 'app/todo/todo.modules';
-import aboutModule from 'app/about/about.modules';
 
 const MODULE_NAME = 'app';
 
 angular.module(MODULE_NAME, [
 		uiRouter,
-		todoModule,
-		aboutModule
+		todoModule
 	])
 	.component(MODULE_NAME, {
 		template: '<ui-view></ui-view>'
