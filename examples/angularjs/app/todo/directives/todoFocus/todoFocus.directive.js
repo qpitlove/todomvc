@@ -7,7 +7,6 @@ function Constructor($timeout) {
 			if (newVal) {
 				$timeout(function () {
 					elem[0].select();
-					elem[0].focus();
 				}, 0, false);
 			}
 		});
