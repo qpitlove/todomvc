@@ -6,7 +6,6 @@ import Clipboard from 'clipboard/dist/clipboard';
 import uuid from 'uuid';
 
 import todo from './components/todo/todo.component';
-import todoClipboardText from './components/todoClipboardText/todoClipboardText.component';
 import TodoStorageProxy from './services/TodoStorageProxy/TodoStorageProxy.factory';
 import TodoApiStorage from './services/TodoApiStorage/TodoApiStorage.factory';
 import TodoLocalStorage from './services/TodoLocalStorage/TodoLocalStorage.factory';
@@ -26,11 +25,9 @@ angular.module(MODULE_NAME, [
 	])
 	.constant('localStorage', window.localStorage)
 	.constant('Date', window.Date)
-	.constant('Clipboard', Clipboard)
 	.constant('uuid', uuid)
 
 	.component('todo', todo)
-	.component('todoClipboardText', todoClipboardText)
 	.factory('TodoStorageProxy', TodoStorageProxy)
 	.factory('TodoApiStorage', TodoApiStorage)
 	.factory('TodoLocalStorage', TodoLocalStorage)

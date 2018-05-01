@@ -27,7 +27,6 @@
 					<input class="toggle" type="checkbox" ng-model="todo.completed"
 						   ng-change="$ctrl.toggleCompleted(todo)">
 					<label ng-dblclick="$ctrl.editTodo(todo)">{{todo.title}}</label>
-					<todo-clipboard-text text="todo.title"></todo-clipboard-text>
 					<button class="destroy" ng-click="$ctrl.removeTodo(todo)"></button>
 					<div class="date">{{(todo.updated || todo.created) | date : 'yyyy-MM-dd HH:mm:ss'}}</div>
 				</div>
