@@ -2,7 +2,6 @@ import angular from 'angular';
 import uiRouter from '@uirouter/angularjs/release/angular-ui-router'
 import {ngFontawesome} from 'exports-loader?ngFontawesome="picardy.fontawesome"!angular-fontawesome/dist/angular-fontawesome';
 
-import Clipboard from 'clipboard/dist/clipboard';
 import uuid from 'uuid';
 
 import todo from './components/todo/todo.component';
