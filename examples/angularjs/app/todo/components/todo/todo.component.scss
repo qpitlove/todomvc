@@ -14,7 +14,6 @@ todo {
 		.search-clear {
 			font-size: 20px;
 			width: 4%;
-
 			&:after {
 			content: '\D7';
 			}
@@ -34,15 +33,6 @@ todo {
 
 		#todo-list {
 			li {
-			&:hover {
-				todo-clipboard-text {
-				display: inline-block;
-				}
-			}
-
-			todo-clipboard-text {
-				display: none;
-			}
 
 			label {
 				display: inline-block;
