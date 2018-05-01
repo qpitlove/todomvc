@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 /* @ngInject */
-function Constructor($q, Date, localStorage, uuid) {
+function Constructor($q, Date, localStorage) {
 	'use strict';
 
 	var STORAGE_ID = 'todos-angularjs';
@@ -40,11 +40,6 @@ function Constructor($q, Date, localStorage, uuid) {
 		},
 
 		insert: function (todo) {
-			todo = angular.extend(todo, {
-				id: uuid.v4(),
-				created: Date.now()
-			});
-
 			store.todos.push(todo);
 
 			store._saveToLocalStorage(store.todos);
@@ -53,9 +48,6 @@ function Constructor($q, Date, localStorage, uuid) {
 
 		put: function (todo) {
 			const index = store.todos.indexOf(todo);
-			todo = angular.extend(todo, {
-				updated: Date.now()
-			});
 
 			store.todos[index] = todo;
 
