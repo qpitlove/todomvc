@@ -27,6 +27,9 @@
 			</li>
 		</ul>
 	</section>
+		<footer id="footer" ng-if="$ctrl.getTodos().length === 0" ng-cloak>
+		No Item.
+	</footer>
 	<footer id="footer" ng-if="$ctrl.getTodos().length > 0" ng-cloak>
 		<span id="todo-count"><strong>{{$ctrl.remainingCount}}</strong>
 			<ng-pluralize count="$ctrl.remainingCount"
