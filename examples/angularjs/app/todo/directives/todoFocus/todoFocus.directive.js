@@ -6,7 +6,7 @@ function Constructor($timeout) {
 		scope.$watch(attrs.todoFocus, function (newVal) {
 			if (newVal) {
 				$timeout(function () {
-					elem[0].focus();
+					elem[0].select();
 				}, 0, false);
 			}
 		});
