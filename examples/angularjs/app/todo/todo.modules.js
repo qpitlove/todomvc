@@ -1,4 +1,5 @@
 import angular from 'angular';
+import ngResource from 'angular-resource';
 import uiRouter from '@uirouter/angularjs/release/angular-ui-router'
 
 import todo from './components/todo/todo.component';
@@ -14,6 +15,7 @@ require('todomvc-app-css/index.css');
 
 const MODULE_NAME = 'todo';
 angular.module(MODULE_NAME, [
+		ngResource,
 		uiRouter
 	])
 	.constant('localStorage', window.localStorage)
