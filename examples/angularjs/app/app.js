@@ -16,6 +16,10 @@ angular.module(MODULE_NAME, [
 		template: '<ui-view></ui-view>'
 	})
 	/* @ngInject */
+	.config($locationProvider => {
+		$locationProvider.html5Mode(true)
+	})
+	/* @ngInject */
 	.config(($urlRouterProvider) => {
 		$urlRouterProvider.otherwise('/todo');
 	});
