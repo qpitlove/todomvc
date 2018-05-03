@@ -2,6 +2,26 @@
 
 todo {
   #todoapp {
+ 		#search-todo {
+			width: 95%;
+			padding: 5px 15px;
+			box-sizing: border-box;
+			outline: 0;
+			border: 0;
+		}
+
+		.search-clear {
+			font-size: 20px;
+			width: 4%;
+			&:after {
+			content: '\D7';
+			}
+		}
+
+		#toggle-all {
+			top: -82px;
+		}
+
 		input[type=checkbox] {
 			cursor: pointer;
 		}
