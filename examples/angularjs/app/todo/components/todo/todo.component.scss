@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+todo {
+  #todoapp {
+		h1 {
+			top: -200px;
+			a {
+			color: inherit;
+			text-decoration-line: none;
+			}
+		}
+
+		#search-todo {
+			width: 95%;
+			padding: 5px 15px;
+			box-sizing: border-box;
+			outline: 0;
+			border: 0;
+		}
+
+		.search-clear {
+			font-size: 20px;
+			width: 4%;
+
+			&:after {
+			content: '\D7';
+			}
+		}
+
+		#toggle-all {
+			top: -82px;
+		}
+
+		input[type=checkbox] {
+			cursor: pointer;
+		}
+
+		button {
+			cursor: pointer;
+		}
+
+		#todo-list {
+			li {
+			&:hover {
+				todo-clipboard-text {
+				display: inline-block;
+				}
+			}
+
+			todo-clipboard-text {
+				display: none;
+			}
+
+			label {
+				display: inline-block;
+				padding-right: 10px;
+			}
+
+			.destroy {
+				margin-top: 10px;
+				margin-bottom: auto;
+			}
+
+			.date {
+				text-align: right;
+				font-size: 12px;
+				padding: 0 15px;
+			}
+
+			}
+		}
+  }
+}
