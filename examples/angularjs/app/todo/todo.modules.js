@@ -2,6 +2,8 @@ import angular from 'angular';
 import ngResource from 'angular-resource';
 import uiRouter from '@uirouter/angularjs/release/angular-ui-router'
 
+import uuid from 'uuid'
+
 import todo from './components/todo/todo.component';
 import TodoStorageProxy from './services/TodoStorageProxy/TodoStorageProxy.factory';
 import TodoApiStorage from './services/TodoApiStorage/TodoApiStorage.factory';
@@ -21,6 +23,7 @@ angular.module(MODULE_NAME, [
 	])
 	.constant('localStorage', window.localStorage)
 	.constant('Date', window.Date)
+	.constant('uuid', uuid)
 
 	.component('todo', todo)
 	.factory('TodoStorageProxy', TodoStorageProxy)
